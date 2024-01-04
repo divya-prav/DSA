@@ -34,7 +34,16 @@ graph.addEdge(6, 8, 6);
 graph.addEdge(7, 8, 7);
 
 
-function primsAlgo(graph,start){
-    let visited = [];
+function primsAlgo(){
+    let graph = graph.adjacencyList;
+    let set = new Set();
+    let mst =0;
+    for(let v in graph){
+      set.add(v);
+    
+      console.log(`${v}:${graph[v]}`);
+    }
+console.log(set)
 
 }
+primsAlgo()
